@@ -1,0 +1,56 @@
+{
+  "name": "import-map-deployer",
+  "version": "2.0.0",
+  "description": "a manifest deployer for sofe",
+  "main": "src/web-server.js",
+  "bin": {
+    "import-map-deployer": "./bin/import-map-deployer"
+  },
+  "scripts": {
+    "test": "rm -f sofe-manifest.json && jasmine",
+    "format": "prettier --write './**/*'",
+    "start": "node src/web-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/single-spa/sofe-deplanifester.git"
+  },
+  "keywords": [
+    "sofe"
+  ],
+  "author": "nhumrich",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/single-spa/sofe-deplanifester/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "homepage": "https://github.com/single-spa/sofe-deplanifester#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^3.0.3",
+    "aws-sdk": "^2.2.27",
+    "azure-storage": "^2.10.3",
+    "basic-auth": "^1.0.3",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "lodash": "^4.17.11",
+    "minimist": "^1.2.0",
+    "morgan": "^1.8.1",
+    "request": "^2.79.0",
+    "rwlock": "^5.0.0"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "jasmine": "^2.4.1",
+    "node-static": "^0.7.9",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "superagent": "^1.6.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
