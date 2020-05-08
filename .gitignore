@@ -4,7 +4,7 @@ sofe-manifest.js
 import-map.json
 
 # default config file
-config.json
+# config.json
 
 
 # Logs

@@ -1,0 +1,6 @@
+{
+  "manifestFormat": "importmap",
+  "locations": {
+    "test": "importmap.json"
+  }
+}
